@@ -11,3 +11,10 @@
 --password varchar(45)
 --);
 
+--create table card (
+--id int,
+--broj_kartice int,
+--cvv int,
+--istek_kartice varchar(45),
+--iznos int
+--);
