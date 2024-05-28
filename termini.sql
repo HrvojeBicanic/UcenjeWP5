@@ -18,3 +18,12 @@
 --istek_kartice varchar(45),
 --iznos int
 --);
+
+create table termini (
+id int,
+user_id int,
+pocetak varchar(45),
+kraj varchar(45),
+tereni_id int,
+cijena decimal
+);
