@@ -1,34 +1,34 @@
---create database termini;
+use master;
+go
+drop database if exists tereni;
+go
+create database tereni;
+go
+use tereni;
 
---use termini;
+create table korisnici (
+id int not null primary key identity(1,1),
+ime varchar(45) not null,
+prezime varchar(45) not null,
+broj_mob varchar(45) not null,
+email varchar(45),
+lozinka varchar(45) not null
+);
 
---create table "user" (
---id int,
---ime varchar(45),
---broj_mob varchar(45),
---email varchar(45),
---prezime varchar(45),
---password varchar(45)
---);
+create table termini (
+id int not null primary key identity(1,1),
+korisnik_id int not null,
+pocetak varchar(45),
+kraj varchar(45),
+teren_id int not null,
+cijena decimal(10,2)
+);
 
---create table card (
---id int,
---broj_kartice int,
---cvv int,
---istek_kartice varchar(45),
---iznos int
---);
-
---create table termini (
---id int,
---user_id int,
---pocetak varchar(45),
---kraj varchar(45),
---tereni_id int,
---cijena decimal
---);
-
-create table teren (
+create table tereni (
+id int not null primary key identity(1,1),
 naziv_terena varchar(45),
 tip_terena varchar(45)
 );
+
+alter table termini add foreign key (korisnik_id) references korisnici(id);
+alter table termini add foreign key (teren_id) references tereni(id);
