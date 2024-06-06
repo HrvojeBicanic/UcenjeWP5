@@ -4,7 +4,7 @@ drop database if exists tereni;
 go
 create database tereni;
 go
-use tereni;
+use tereni
 
 create table korisnici (
 id int not null primary key identity(1,1),
