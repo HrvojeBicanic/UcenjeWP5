@@ -11,3 +11,6 @@ update tereni set tip_terena='Košarka' where id=2;
 update tereni set tip_terena='Rukomet' where id=3;
 update tereni set tip_terena='Vaterpolo' where id=5;
 update tereni set tip_terena='Skvoš' where id=6;
+
+select * from termini;
+delete 
