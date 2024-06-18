@@ -10,15 +10,8 @@ create table proizvodi (
 	šifra int not null primary key identity (1,1),
 	naziv varchar(55) not null,
 	datum_nabave datetime,
-	cijena decimal(10,2) not null,
-	aktivan bit
-);
-
-create table računi(
-	šifra int not null primary key identity (1,1),
-	datum datetime,
-	kupac varchar(55),
-	"status" bit
+	cijena decimal(10,2),
+	aktivan bit not null
 );
 
 create table kupci (
@@ -29,9 +22,24 @@ create table kupci (
 	mjesto varchar(55)
 );
 
-create table stavke (
-	račun int,
-	proizvod int,
-	količina int,
-	cijena int
+create table računi(
+	šifra int not null primary key identity (1,1),
+	datum datetime,
+	kupac int not null foreign key references kupci(šifra),
+	"status" bit
 );
+
+
+create table stavke (
+	račun int not null foreign key references računi(šifra),
+	proizvod int not null foreign key references proizvodi(šifra),
+	količina int,
+	cijena decimal (10,2)
+);
+
+select * from proizvodi;
+insert into proizvodi (naziv, datum_nabave, cijena, aktivan) values
+	('Voda', '05-06-2023 11:24', 1.23, 1 ),
+	('Jogurt','03-04-2023 12:11', 2.10, 0),
+	('Batak','02-04-2023 09:23', 50.25, 1)
+update proizvodi set naziv='Kisela', aktivan=0 where naziv='Voda';
