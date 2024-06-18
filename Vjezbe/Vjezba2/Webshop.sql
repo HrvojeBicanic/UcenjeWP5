@@ -18,7 +18,7 @@ create table računi(
 	šifra int not null primary key identity (1,1),
 	datum datetime,
 	kupac varchar(55),
-	status bit
+	"status" bit
 );
 
 create table kupci (
