@@ -50,3 +50,5 @@ insert into kupci (ime, prezime, mjesto) values
 	('Vojko','Vucina','Svinjarevci'),
 	('Bizzo','Bodega','Privlaka')
 update kupci set prezime='Vrućina' where prezime='Vucina';
+delete from kupci where ime='Damir';
+
