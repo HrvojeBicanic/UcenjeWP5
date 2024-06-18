@@ -26,7 +26,7 @@ create table računi(
 	šifra int not null primary key identity (1,1),
 	datum datetime,
 	kupac int not null foreign key references kupci(šifra),
-	"status" bit
+	račun_status bit
 );
 
 
@@ -52,3 +52,12 @@ insert into kupci (ime, prezime, mjesto) values
 update kupci set prezime='Vrućina' where prezime='Vucina';
 delete from kupci where ime='Damir';
 
+select * from računi;
+insert into računi (datum, kupac, račun_status) values
+	('03-05-2022 11:21', 2 , 1),
+	('08-06-2022 10:10', 3 ,0)
+
+select * from stavke;
+insert into stavke (račun, proizvod, količina) values
+	(2, 2, 10),
+	(3, 3, 50)
