@@ -85,6 +85,9 @@ namespace UcenjeCS
 
             x = 5;
             y = 2;
+
+            // int/int daje int
+            //mora sd raditi cast
             Console.WriteLine(x/(float)y); //(float) cast u tip podatka float
 
         }
