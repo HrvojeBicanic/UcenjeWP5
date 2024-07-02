@@ -1,7 +1,9 @@
 ﻿ // See https://aka.ms/new-console-template for more information 
 using UcenjeCS;
 
-E04Z1.Izvedi();
+E05Nizovi.Izvedi();
+
+//E04Z1.Izvedi();
 
 //E04UvjetnoGrananjeSwitch.Izvedi();
 
