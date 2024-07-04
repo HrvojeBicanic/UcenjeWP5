@@ -1,7 +1,17 @@
 ﻿ // See https://aka.ms/new-console-template for more information 
 using UcenjeCS;
 
-E06ForPetlja.Izvedi();
+E07Z1.Izvedi();
+
+//E10TryCatch.Izvedi();
+
+//E09ForEachPetlja.Izvedi();
+
+//E08DoWhilePetlja.Izvedi();
+
+//E07WhilePetlja.Izvedi();
+
+//E06ForPetlja.Izvedi();
 
 //E05Nizovi.Izvedi();
 
