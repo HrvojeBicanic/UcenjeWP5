@@ -14,16 +14,26 @@ namespace UcenjeCS
         // program ispisuje manji
         public static void Izvedi() 
         {
-            Console.WriteLine("Unesi dva cijela broja");
-            int brojJedan = int.Parse(Console.ReadLine());
-            int brojDva = int.Parse(Console.ReadLine());
-            if (brojJedan < brojDva)
+            Console.WriteLine("Unesite dva cijela broja!");
+            Console.Write("Prvi broj: ");
+            int prviBroj = int.Parse(Console.ReadLine());
+            Console.Write("Drugi broj: ");
+            int drugiBroj = int.Parse(Console.ReadLine());
+            Console.Write("Treći broj: ");
+            int treciBroj = int.Parse(Console.ReadLine());
+
+            if (prviBroj > drugiBroj & prviBroj > treciBroj)
             {
-                Console.WriteLine("Manji broj je: " + brojJedan);
+                Console.WriteLine(prviBroj);
+
             }
-            else 
+            else if (drugiBroj > prviBroj & drugiBroj > treciBroj)
             {
-                Console.WriteLine("Manji broj je ;"  );
+                Console.WriteLine(drugiBroj);
+            }
+            else
+            {
+                Console.WriteLine(treciBroj);
             }
         }
     }
