@@ -23,7 +23,7 @@ namespace UcenjeCS
                 Console.WriteLine("Broj " + broj + " je neparan");
             }
 
-            Console.WriteLine(broj % 2 == 0 ? "Paran" : "Ne paran") ;
+            Console.WriteLine(broj % 2 == 0 ? "Paran" : "Ne paran");
 
 
         }

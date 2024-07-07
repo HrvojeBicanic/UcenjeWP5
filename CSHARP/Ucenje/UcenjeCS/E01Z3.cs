@@ -18,7 +18,8 @@ namespace UcenjeCS
             int brojStanovnika = int.Parse(Console.ReadLine());
 
             //Console.WriteLine("U " + grad + " živi " + brojStanovnika + " ljudi.");
-            Console.WriteLine("U {0} živi {1} ljudi", grad, brojStanovnika);
+            //Console.WriteLine("U {0} živi {1} ljudi", grad, brojStanovnika);
+            Console.WriteLine($"U {grad} zivi {brojStanovnika} ljudi");
 
         }
     }
