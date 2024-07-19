@@ -1,5 +1,6 @@
 ﻿ // See https://aka.ms/new-console-template for more information 
 using UcenjeCS;
+//E11.Izvedi();
 
 //E01Z4.Izvedi();
 
@@ -13,7 +14,7 @@ using UcenjeCS;
 
 //E03Z4.Izvedi();
 
-E01Z3.Izvedi();
+//E01Z3.Izvedi();
 
 //E01Z2.Izvedi();
 
