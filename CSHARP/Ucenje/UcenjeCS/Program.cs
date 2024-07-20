@@ -1,8 +1,9 @@
 ﻿ // See https://aka.ms/new-console-template for more information 
 using UcenjeCS;
 
+E06Z1CiklicnaTablica.Izvedi();
 
-E12Rekurzija.Izvedi();
+//E12Rekurzija.Izvedi();
 
 //E11.Izvedi();
 
