@@ -1,7 +1,14 @@
 ﻿ // See https://aka.ms/new-console-template for more information 
 using UcenjeCS;
 
-E06Z1CiklicnaTablica.Izvedi();
+
+E13Vjezbanje.Izvedi();
+
+//E14GeneratorLozinki.Izvedi();
+
+//E11Z1.Izvedi();
+
+//E06Z1CiklicnaTablica.Izvedi();
 
 //E12Rekurzija.Izvedi();
 
