@@ -20,7 +20,7 @@ namespace UcenjeCS
             String alphabetsLower = "abcdefghijklmnopqrstuvwxyz";
             String alphabetsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             String brojevi = "0123456789";
-
+            String interpunkcija = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
             Console.Write("Unesi duljinu lozinke: ");
             int duljinaLozinke = int.Parse(Console.ReadLine());
@@ -29,63 +29,37 @@ namespace UcenjeCS
             Console.WriteLine("1.) Mala slova");
             Console.WriteLine("2.) Velika slova");
             Console.WriteLine("3.) Brojevi");
+            Console.WriteLine("4.) Interpunkcijski znakovi");
 
-            string font = "";
 
-            while (true)
+            Console.WriteLine("Odaberi opcije (npr. 1,2,3 ili 1 3)");
+            string[] odabraneOpcije = Console.ReadLine().Split(',', ' ');
+
+            List<string> popisZnakova = new List<string>();
+
+            foreach (string odabir in odabraneOpcije)
             {
-                font = Console.ReadLine();
-                if (font.Equals("1") || font.Equals("2") || font.Equals("3"))
+                switch (odabir)
                 {
-                    break;
-                }
-                Console.WriteLine($"{font}");
-            }
 
-            String random = "";
-
-            if (font == "1")
-            {
-                for (int i = 0; i < duljinaLozinke; i++)
-                {
-                    int index = ran.Next(alphabetsLower.Length);
-                    random += alphabetsLower[index];
-
-
-                }
-
-                //Console.WriteLine($"Lozinka: {random}");
-                //Console.ReadLine();
-
-            }
-            else if (font == "2")
-            {
-
-                for (int i = 0; i < duljinaLozinke; i++)
-                {
-                    int index = ran.Next(alphabetsUpper.Length);
-                    random += alphabetsUpper[index];
+                    case "1":
+                        popisZnakova.Add(alphabetsLower);
+                        break;
+                    case "2":
+                        popisZnakova.Add(alphabetsUpper);
+                        break;
+                    case "3":
+                        popisZnakova.Add(brojevi);
+                        break;
+                    case "4":
+                        popisZnakova.Add(interpunkcija);
+                        break;
 
                 }
-
-
-                
-            }
-            
-            else if (font == "3")
-            {
-                for (int i = 0; i < duljinaLozinke; i++)
-                {
-                    int index = ran.Next(brojevi.Length);
-                    random += brojevi[index];
-
-                }
-                Console.WriteLine($"Lozinka: {random}");
-                Console.ReadLine();
             }
 
-            Console.WriteLine($"Lozinka: {random}");
-            Console.ReadLine();
+
+
 
         }
     }
