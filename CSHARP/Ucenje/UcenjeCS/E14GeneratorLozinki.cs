@@ -19,7 +19,6 @@ namespace UcenjeCS
             Random ran = new Random();
             String alphabetsLower = "abcdefghijklmnopqrstuvwxyz";
             String alphabetsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            String alphabetsLowerAndUpper = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
             String brojevi = "0123456789";
 
 
@@ -29,8 +28,7 @@ namespace UcenjeCS
             Console.WriteLine("Lozinka se sastoji od: ");
             Console.WriteLine("1.) Mala slova");
             Console.WriteLine("2.) Velika slova");
-            Console.WriteLine("3.) Velika i mala slova");
-            Console.WriteLine("4.) Brojevi");
+            Console.WriteLine("3.) Brojevi");
 
             string font = "";
 
@@ -56,8 +54,8 @@ namespace UcenjeCS
 
                 }
 
-                Console.WriteLine($"Lozinka: {random}");
-                Console.ReadLine();
+                //Console.WriteLine($"Lozinka: {random}");
+                //Console.ReadLine();
 
             }
             else if (font == "2")
@@ -73,17 +71,8 @@ namespace UcenjeCS
 
                 
             }
-            else if (font == "3") 
-            {
-                for (int i = 0; i < duljinaLozinke; i++)
-                {
-                    int index = ran.Next(alphabetsLowerAndUpper.Length);
-                    random += alphabetsLowerAndUpper[index];
-
-                }
-                
-            }
-            else if (font == "4")
+            
+            else if (font == "3")
             {
                 for (int i = 0; i < duljinaLozinke; i++)
                 {
@@ -95,7 +84,8 @@ namespace UcenjeCS
                 Console.ReadLine();
             }
 
-
+            Console.WriteLine($"Lozinka: {random}");
+            Console.ReadLine();
 
         }
     }
