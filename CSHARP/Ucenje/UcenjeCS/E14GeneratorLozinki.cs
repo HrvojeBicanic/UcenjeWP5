@@ -14,16 +14,27 @@ namespace UcenjeCS
     internal class E14GeneratorLozinki
     {
         internal static void Izvedi()
+
         {
+            static string GetRandomCharacters(Random ran, String characters)
+            {
+                int radnomNumber = ran.Next(0, characters.Length);
+                return characters[radnomNumber].ToString();
+            }
+
+
 
             Random ran = new Random();
             String alphabetsLower = "abcdefghijklmnopqrstuvwxyz";
             String alphabetsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            String brojevi = "0123456789";
-            String interpunkcija = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+            String numbers = "0123456789";
+            String interpuction = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+
 
             Console.Write("Unesi duljinu lozinke: ");
-            int duljinaLozinke = int.Parse(Console.ReadLine());
+            int passwordLenght = int.Parse(Console.ReadLine());
+
+
 
             Console.WriteLine("Lozinka se sastoji od: ");
             Console.WriteLine("1.) Mala slova");
@@ -35,9 +46,60 @@ namespace UcenjeCS
             Console.WriteLine("Odaberi opcije (npr. 1,2,3 ili 1 3)");
             string[] odabraneOpcije = Console.ReadLine().Split(',', ' ');
 
-            List<string> popisZnakova = new List<string>();
+            for (int i = 0; i < odabraneOpcije.Length; i++)
+            {
+                if (odabraneOpcije[i] == "1")
+                {
+                    for (int j = 0; j < (passwordLenght / odabraneOpcije.Length); j++)
+                    {
+                        Console.Write(GetRandomCharacters (ran, alphabetsLower));
 
-            foreach (string odabir in odabraneOpcije)
+                    }
+
+                }else if (odabraneOpcije[i] == "2")
+                {
+                    for (int j = 0; j < passwordLenght; j++)
+                    {
+                        Console.Write(GetRandomCharacters(ran, alphabetsUpper));
+
+                    }
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* foreach (string odabir in odabraneOpcije)
+             * List<string> popisZnakova = new List<string>();
             {
                 switch (odabir)
                 {
@@ -57,10 +119,8 @@ namespace UcenjeCS
 
                 }
             }
-
-
-
-
+            StringBuilder random = new StringBuilder();
+           */
         }
     }
 }
