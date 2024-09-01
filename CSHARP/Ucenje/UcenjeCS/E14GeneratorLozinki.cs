@@ -23,6 +23,7 @@ namespace UcenjeCS
             String punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
 
+
             Console.Write("Unesi duljinu lozinke: ");
             int passwordLenght = int.Parse(Console.ReadLine());
 
@@ -55,12 +56,13 @@ namespace UcenjeCS
                         break;
 
                     case "3":
-                        password.Append(GetRandomCharacters(ran, option));
+                        password.Append(GetRandomCharacters(ran, numbers));
                         break;
 
                     case "4":
                         password.Append(GetRandomCharacters(ran, punctuation));
                         break;
+
                 }
             }
             while (password.Length < passwordLenght)
@@ -78,7 +80,7 @@ namespace UcenjeCS
                             break;
 
                         case "3":
-                            password.Append(GetRandomCharacters(ran, option));
+                            password.Append(GetRandomCharacters(ran, numbers));
                             break;
 
                         case "4":
@@ -92,11 +94,13 @@ namespace UcenjeCS
                 }
             }
             Console.WriteLine($"Generated password: {password.ToString()}");
+
         }
         static string GetRandomCharacters(Random ran, String characters)
-    {
-        int randomNumber = ran.Next(0, characters.Length);
-        return characters[randomNumber].ToString();
-    }
+        {
+            int randomNumber = ran.Next(0, characters.Length);
+            return characters[randomNumber].ToString();
+
+        }
     }
 }

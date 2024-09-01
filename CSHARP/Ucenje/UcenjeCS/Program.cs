@@ -2,9 +2,14 @@
 using UcenjeCS;
 
 
+
+
+
+UcenjeCS.E15KlasaObject.Program.Izvedi();
+ 
 //E13Vjezbanje.Izvedi();
 
-E14GeneratorLozinki.Izvedi();
+//E14GeneratorLozinki.Izvedi();
 
 //E11Z1.Izvedi();
 
