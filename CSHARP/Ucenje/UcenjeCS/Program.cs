@@ -3,10 +3,11 @@ using UcenjeCS;
 
 
 
+new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
 
 
-UcenjeCS.E15KlasaObject.Program.Izvedi();
- 
+//UcenjeCS.E15KlasaObject.Program.Izvedi();
+
 //E13Vjezbanje.Izvedi();
 
 //E14GeneratorLozinki.Izvedi();
