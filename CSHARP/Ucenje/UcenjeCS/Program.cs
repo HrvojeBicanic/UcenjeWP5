@@ -1,8 +1,9 @@
 ﻿ // See https://aka.ms/new-console-template for more information 
 using UcenjeCS;
 
+new UcenjeCS.E17GenericiLambdaEkstenzije.Program();
 
-new UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad.Zadatak();
+//new UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad.Zadatak();
 
 //new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
 

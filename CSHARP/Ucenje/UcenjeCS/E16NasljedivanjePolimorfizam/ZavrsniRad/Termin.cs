@@ -20,7 +20,7 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 
         public Termin() { }
 
-        public Termin(int? id, string? korisnik, DateTime? pocetak, DateTime? kraj, Teren? teren, decimal? cijena ) 
+        public Termin(int? id, Korisnik? korisnik, DateTime? pocetak, DateTime? kraj, Teren? teren, decimal? cijena ) 
         {
             base.ID = id;
             this.Korisnik = korisnik;

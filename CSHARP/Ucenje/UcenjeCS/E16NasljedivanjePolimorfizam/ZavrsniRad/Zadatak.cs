@@ -28,7 +28,7 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
 
             var teren = new Teren(1, "Lokosi", "Nogomet");
 
-            var termin = new Termin(1, korisnik, DateTime.Now, DateTime.Now, teren, decimal);
+            var termin = new Termin(1, korisnik, DateTime.Now, DateTime.Now, teren, 12.22M);
 
             
             
