@@ -2,8 +2,9 @@
 using UcenjeCS;
 
 
+new UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad.Zadatak();
 
-new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
+//new UcenjeCS.E16NasljedivanjePolimorfizam.Program();
 
 
 //UcenjeCS.E15KlasaObject.Program.Izvedi();

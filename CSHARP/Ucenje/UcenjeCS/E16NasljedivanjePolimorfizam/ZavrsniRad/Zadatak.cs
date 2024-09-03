@@ -24,7 +24,15 @@ namespace UcenjeCS.E16NasljedivanjePolimorfizam.ZavrsniRad
         {
             //ovdje instancirati svaku kreiranu klasu jednom i dodjeliti svim svojstvima vrijednosti
 
+            var korisnik = new Korisnik(1, "Hrvoje", "Bicanic", "096545787", "ejovrh@email.com", "password");
 
+            var teren = new Teren(1, "Lokosi", "Nogomet");
+
+            var termin = new Termin(1, korisnik, DateTime.Now, DateTime.Now, teren, decimal);
+
+            
+            
+            
         }
 
     }
