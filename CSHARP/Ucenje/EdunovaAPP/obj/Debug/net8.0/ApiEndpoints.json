@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "ContainingType": "EdunovaAPP.Controllers.SmjerController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Smjer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EdunovaAPP.Controllers.SmjerController",
+    "Method": "Post",
+    "RelativePath": "api/v1/Smjer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "smjer",
+        "Type": "EdunovaAPP.Models.Smjer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EdunovaAPP.Controllers.SmjerController",
+    "Method": "Put",
+    "RelativePath": "api/v1/Smjer/{sifra}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sifra",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "smjer",
+        "Type": "EdunovaAPP.Models.Smjer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EdunovaAPP.Controllers.SmjerController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Smjer/{sifra}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sifra",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
