@@ -2,6 +2,8 @@
 go
 drop database if exists tereni;
 go
+create database edunovawp5 collate Croatian_CI_AS;
+go
 create database tereni;
 go
 use tereni;
