@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj": {}
+    "C:\\Users\\cholakEEs\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj": {
+    "C:\\Users\\cholakEEs\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj",
+        "projectUniqueName": "C:\\Users\\cholakEEs\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj",
         "projectName": "EdunovaAPP",
-        "projectPath": "C:\\Users\\Korisnik\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj",
-        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\obj\\",
+        "projectPath": "C:\\Users\\cholakEEs\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\EdunovaAPP.csproj",
+        "packagesPath": "C:\\Users\\cholakEEs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cholakEEs\\Documents\\GitHub\\UcenjeWP5\\CSHARP\\Ucenje\\EdunovaAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cholakEEs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
